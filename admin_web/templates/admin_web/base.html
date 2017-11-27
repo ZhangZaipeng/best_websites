@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>我的project</title>
+
+    {% include "admin_web/wrapper/css.html" %}
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+<!-- wrapper -->
+<div class="wrapper">
+    <!-- header  -->
+    {% include "admin_web/wrapper/head.html" %}
+
+    <!-- Left side column. contains the logo and sidebar -->
+    {% include "admin_web/wrapper/left.html" %}
+
+    <!-- Content Wrapper. Contains page content -->
+    {% include "admin_web/wrapper/content.html" %}
+
+    <!-- /.content-wrapper -->
+    {% include "admin_web/wrapper/footer.html" %}
+</div>
+<!-- ./wrapper -->
+    {% include "admin_web/wrapper/js.html" %}
+
+</body>
+</html>
