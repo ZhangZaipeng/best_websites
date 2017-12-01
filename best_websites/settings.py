@@ -25,7 +25,7 @@ SECRET_KEY = 'yw^(1(-b9(igeq79uqn*mai@65f-ldpkuki&y0@e6wce_gergu'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost','127.0.01']
 
 
 # Application definition
@@ -56,7 +56,7 @@ ROOT_URLCONF = 'best_websites.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'admin_web/templates/admin_web')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -120,3 +120,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+
+SESSION_COOKIE_AGE = 60*60*2
+SESSION_EXPIRE_AT_BROWSER_CLOSE = False
