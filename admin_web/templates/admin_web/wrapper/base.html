@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>我的project</title>
+    <title>best后台管理系统</title>
 
     {% include "admin_web/wrapper/css.html" %}
 </head>
@@ -20,8 +20,9 @@
 
     <!-- Content Wrapper. Contains page content -->
     <!-- {% block content %}{% endblock %} -->
-    {% include "admin_web/wrapper/content.html" %}
-
+    <div class="content-wrapper">
+        {% block content-wrapper %}{% endblock %}
+    </div>
     <!-- /.content-wrapper -->
     {% include "admin_web/wrapper/footer.html" %}
 </div>
